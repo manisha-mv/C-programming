@@ -1,8 +1,17 @@
 #include <stdio.h>
 
 int main(){
-    
-    printf("Age : 20");
-    
-    return 0;
-}
+      char ch;
+      scanf("%c",&ch);
+      
+      if(ch>=48 && ch<=57){
+          printf("Integer");
+      }
+      else if((ch>=65 && ch<=90) || (ch>=97 && ch<=122)){
+          printf("Alphabet");
+      }
+      else {
+          printf("Special character");
+      }
+      return 0;
+} 

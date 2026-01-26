@@ -1,8 +1,14 @@
 #include <stdio.h>
 
 int main(){
+    int a ;
+    scanf("%d",&a);
     
-    printf("Age : 20");
-    
+    if(a%3==0 && a%7==0){
+        printf("%d is Mutiple of both 3 and 7",a);
+    }
+    else{
+        printf("%d is Not divisible by both 3 and 7",a);
+    }
     return 0;
 }
