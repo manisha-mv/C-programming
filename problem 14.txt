@@ -1,9 +1,11 @@
-#include <stdio.h>
-
 int main(){
-    
-    int num = 10;
-    num = 25;
-    printf("%d",num);
+    int num;
+    scanf("%d",&num);
+    if(num%11==0){
+        printf("divisible by 11");
+    }
+    else {
+        printf("not divsibly by 11 ");
+    }
     return 0;
 }

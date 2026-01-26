@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 int main(){
+    char ch;
+    scanf("%c",&ch);
     
-    int a= 10;
-    int b= 2;
-    int c = a/b;
-    printf("%d",c);
+    if(ch>=48 && ch<=57){
+        printf("Digit");
+    }
+    else{
+        printf("Not a digit");
+    }
     return 0;
 }

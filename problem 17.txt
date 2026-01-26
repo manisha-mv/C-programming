@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 int main(){
+    int num;
+    scanf("%d",&num);
     
-    int a= 10;
-    int b= 20;
-    int c = a*b;
-    printf("%d",c);
+    if(num>=10 && num<=15){
+        printf("%d is wihtin in the range",num);
+    }
+    else{
+        printf("%d is not within in the range",num);
+    }
     return 0;
 }
