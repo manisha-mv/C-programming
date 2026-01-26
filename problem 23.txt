@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+    int month;
+    scanf("%d",&month);
+    if(month==2){
+        printf("28 or 29 days");
+    }
+    else if(month<=7 && month%2!=0){
+        printf("month has 31 days");
+    }
+    else if(month>7 && month%2==0){
+        printf("month  has 31 days");
+    }
+    else{
+        printf("month has 30 days");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

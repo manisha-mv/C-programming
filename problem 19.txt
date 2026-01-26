@@ -1,9 +1,20 @@
 #include <stdio.h>
 
 int main(){
+    int unit;
+    scanf("%d",&unit);
     
-    int age ;
-    age = 20;
-    printf("age is %d",age);
+    if(unit<100){
+        printf("Bill amt = %d",unit*4);
+    }
+    else if(unit<=200){
+        printf("Bill amt= %d",unit*5);
+    }
+    else{
+        printf("Bill amt = %d",unit*6);
+    }
     return 0;
 }
+
+
+
