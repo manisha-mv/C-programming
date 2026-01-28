@@ -9,9 +9,10 @@ int main(){
 
     for(int i = n;i<=10;i++){
         for(int j = p;i<=10;i++){
-            t =p*n;
+            t =pow(n,p);
         } 
         printf("%d",t);
     }
     return 0;
+
 }
