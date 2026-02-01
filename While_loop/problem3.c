@@ -1,24 +1,32 @@
 #include <stdio.h>
 
-int main(){
+int main() {
+    int totalData;
+    scanf("%d", &totalData);
+
     int n;
-    int GD;
-    int totaldata;
-    int count =0;
-    int i ;
+    scanf("%d", &n);
 
-    scanf("%d",&n);
-    scanf("%d",&balance);
-    
-    while(i<n){
-        GD = Gd+totaldays;
+    int usage;
+    int i = 0;
+    int daysUsed = 0;
 
-        if(totaldays<GD){
-            count++;
+    while (i < n && totalData > 0) {
+        scanf("%d", &usage);
+
+        if (totalData >= usage) {
+            totalData = totalData - usage;
+            daysUsed++;
+        } else {
+            totalData = 0;   
+            break;
         }
+
         i++;
     }
-    printf("Data used : %d",total);
-    printf("remaining dats: %d",count);
+
+    printf("Days Used: %d\n", daysUsed);
+    printf("Remaining Data: %dGB\n", totalData);
+
     return 0;
 }
