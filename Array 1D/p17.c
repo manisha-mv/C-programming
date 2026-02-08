@@ -5,20 +5,21 @@ int main(){
     scanf("%d",&size);
 
     int arr[size];
-    int found = 0;
+
     for(int i = 0;i<size;i++){
         scanf("%d",&arr[i]);
-        for(int j = size;j>=0;j--){
-            if(arr[j]!=arr[size-i-1]){
-                found = 0;
-            }
+    }
+    int palindrome = 1;
+    for(int i = 0;i<size/2;i++){
+        if(arr[i]!=arr[size-i-1]){
+            palindrome = 0;
         }
     }
-    if(found=1){
-        printf("yes");
+    if(palindrome){
+        printf("YES");
     }
     else{
-        printf("no");
+        printf("NO");
     }
     return 0 ;
 }
